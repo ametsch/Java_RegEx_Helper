@@ -15,6 +15,10 @@ public class RegExHelper {
 
     public static final Pattern isASCII = Pattern.compile("^[\\x00-\\x7F]*$");
 
+    public static final Pattern isEmail = Pattern.compile("^[a-zA-Z0-9-_.]+@[a-zA-Z0-9-_.]+$");
+
+    public static final Pattern isURL = Pattern.compile("^[a-zA-Z0-9]+[a-zA-Z0-9./:+_%-]+[a-zA-Z0-9]$");
+
     public static boolean match(Pattern pat, String str){
         Matcher m = pat.matcher(str);
         return m.matches();
