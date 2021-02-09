@@ -7,6 +7,7 @@ public class RegExHelper {
     public static final Pattern isAlpha = Pattern.compile("^[a-zA-Z]*$");
     public static final Pattern isNumeric = Pattern.compile("^[0-9]*$");
     public static final Pattern isHex = Pattern.compile("^[0-9a-fA-F]*$");
+    public static final Pattern isDecimal = Pattern.compile("^[0-9]+\\.[0-9]*?$");
 
     public static final Pattern isAlphaNumericSpace = Pattern.compile("^[ a-zA-Z0-9]*$");
     public static final Pattern isAlphaSpace = Pattern.compile("^[ a-zA-Z]*$");
