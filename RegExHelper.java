@@ -16,9 +16,9 @@ public class RegExHelper {
 
     public static final Pattern isASCII = Pattern.compile("^[\\x00-\\x7F]*$");
 
-    public static final Pattern isEmail = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
+    public static final Pattern isEmail = Pattern.compile("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$");
 
-    public static final Pattern isURL = Pattern.compile("^(https?|ftps?|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]");
+    public static final Pattern isURL = Pattern.compile("^(https?|ftps?|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]$");
 
     public static boolean match(Pattern pat, String str){
         Matcher m = pat.matcher(str);
