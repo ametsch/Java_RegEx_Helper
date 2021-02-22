@@ -30,6 +30,12 @@ public class RegExHelper {
     public static final Pattern isByteBinary = Pattern.compile("^[0-1]{8}$");
     public static final Pattern isByteHex = Pattern.compile("^[0-9a-fA-F]{2}$");
 
+    //name formats
+    public static final Pattern isFirstCommaLast = Pattern.compile("^[A-Za-z-]+, ?[A-Za-z-]+$");
+    public static final Pattern isLastCommaFirst = Pattern.compile("^[A-Za-z-]+, ?[A-Za-z-]+$");
+    public static final Pattern isFirstSpaceLast = Pattern.compile("^[A-Za-z-]+ [A-Za-z-]+$");
+    public static final Pattern isLastSpaceFirst = Pattern.compile("^[A-Za-z-]+ [A-Za-z-]+$");
+
 
 
     // Date formats based on this list: https://docs.oracle.com/cd/E41183_01/DR/Date_Format_Types.html
