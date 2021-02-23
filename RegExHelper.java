@@ -1,4 +1,4 @@
-package Ch10ArrayLists;
+package RegExHelper;
 
 import java.util.regex.*;
 
@@ -6,6 +6,7 @@ import java.util.regex.*;
  * A class to assist with the use of Regular Expressions
  */
 public class RegExHelper {
+    private RegExHelper(){}
     /**
      * a regular expression to check if a String is alpha numeric
      */
