@@ -133,8 +133,8 @@ public class RegExHelper {
 
     /**
      *
-     * @param pat Java.util.regex.Pattern -- the regular expression you want to use
-     * @param str Java.lang.String -- the String you want to search
+     * @param pat java.util.regex.Pattern -- the regular expression you want to use
+     * @param str java.lang.String -- the String you want to search
      * @return boolean -- if "str" matches the regular expression "pat"
      */
     public static boolean match(Pattern pat, String str){
@@ -144,8 +144,8 @@ public class RegExHelper {
 
     /**
      * 
-     * @param pat Java.lang.String -- the String of the regular expression you want to create
-     * @return Java.util.regex.Pattern -- the regular expression
+     * @param pat java.lang.String -- the String of the regular expression you want to create
+     * @return java.util.regex.Pattern -- the regular expression
      */
     public static Pattern mkPat(String pat){
         return Pattern.compile(pat);
