@@ -1,5 +1,3 @@
-package RegExHelper;
-
 import java.util.regex.*;
 
 /**
